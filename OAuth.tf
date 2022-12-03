@@ -8,9 +8,7 @@ terraform {
 }
 
 provider "auth0" {
-  domain        = "dev-1vi7cmkd3q0w5v8f.uk.auth0.com"
-  client_id     = ${{ secrets.client_id }}
-  client_secret = ${{ secrets.client_secret }}
+   
 }
 
 
@@ -25,3 +23,7 @@ resource "auth0_client" "terraform-secure-express" {
     alg = "RS256"
   }
 }
+
+
+#domain        = "dev-1vi7cmkd3q0w5v8f.uk.auth0.com"
+  
