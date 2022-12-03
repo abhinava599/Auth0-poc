@@ -15,7 +15,7 @@ provider "auth0" {
 
 
 resource "auth0_client" "terraform-secure-express" {
-  name            = "Terraform Secure Express"
+  name            = "Terraform Secure Express-demo"
   description     = "App for running Dockerized Express application via Terraform"
   app_type        = "regular_web"
   callbacks       = ["http://localhost:3000/callback"]
